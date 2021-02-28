@@ -1,0 +1,8 @@
+name: MorphSupportPlugin
+version: ${project.version}
+main: com.gmail.tomatan515.morphsupportplugin.MorphSupportPlugin
+
+commands:
+  start:
+    usage: none.
+    description: none.
