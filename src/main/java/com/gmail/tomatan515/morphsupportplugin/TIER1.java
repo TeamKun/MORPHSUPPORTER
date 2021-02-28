@@ -14,7 +14,6 @@ public enum TIER1 {
     PIG,
     RABBIT,
     SHEEP,
-    SQUID,
     VILLAGER,
     SILVERFISH,
 }

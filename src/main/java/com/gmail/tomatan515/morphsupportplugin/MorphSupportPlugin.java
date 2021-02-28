@@ -9,6 +9,7 @@ import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerChatEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -67,19 +68,19 @@ public final class MorphSupportPlugin extends JavaPlugin implements Listener {
 
                                 if (k < 80)
                                 {
-                                    double j =  Math.random() * EntityType.values().length;
+                                    double j =  Math.random() * TIER1.values().length;
                                     Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                             " " + TIER1.values()[(int) j]);
                                 }
                                 else if (k >= 80 && k < 90)
                                 {
-                                    double j =  Math.random() * EntityType.values().length;
+                                    double j =  Math.random() * TIER2.values().length;
                                     Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                             " " + TIER2.values()[(int) j]);
                                 }
                                 else
                                 {
-                                    double j =  Math.random() * EntityType.values().length;
+                                    double j =  Math.random() * TIER3.values().length;
                                     Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                             " " + TIER3.values()[(int) j]);
                                 }
@@ -94,19 +95,19 @@ public final class MorphSupportPlugin extends JavaPlugin implements Listener {
 
                                 if (k < 40)
                                 {
-                                    double j =  Math.random() * EntityType.values().length;
+                                    double j =  Math.random() * TIER1.values().length;
                                     Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                             " " + TIER1.values()[(int) j]);
                                 }
                                 else if (k >= 40 && k < 60)
                                 {
-                                    double j =  Math.random() * EntityType.values().length;
+                                    double j =  Math.random() * TIER2.values().length;
                                     Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                             " " + TIER2.values()[(int) j]);
                                 }
                                 else if (k >= 60 && k < 80)
                                 {
-                                    double j =  Math.random() * EntityType.values().length;
+                                    double j =  Math.random() * TIER3.values().length;
                                     Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                             " " + TIER3.values()[(int) j]);
                                 }
@@ -116,13 +117,13 @@ public final class MorphSupportPlugin extends JavaPlugin implements Listener {
 
                                     if (l > 60)
                                     {
-                                        double j =  Math.random() * EntityType.values().length;
+                                        double j =  Math.random() * TIER4.values().length;
                                         Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                                 " " + TIER4.values()[(int) j]);
                                     }
                                     else
                                     {
-                                        double j =  Math.random() * EntityType.values().length;
+                                        double j =  Math.random() * TIER5.values().length;
                                         Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                                 " " + TIER5.values()[(int) j]);
                                     }
@@ -138,19 +139,19 @@ public final class MorphSupportPlugin extends JavaPlugin implements Listener {
 
                                 if (k < 20)
                                 {
-                                    double j = Math.random() * EntityType.values().length;
+                                    double j = Math.random() * TIER1.values().length;
                                     Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                             " " + TIER1.values()[(int) j]);
                                 }
                                 else if (k >= 20 && k < 40)
                                 {
-                                    double j = Math.random() * EntityType.values().length;
+                                    double j = Math.random() * TIER2.values().length;
                                     Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                             " " + TIER2.values()[(int) j]);
                                 }
                                 else if (k >= 40 && k < 60)
                                 {
-                                    double j = Math.random() * EntityType.values().length;
+                                    double j = Math.random() * TIER3.values().length;
                                     Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                             " " + TIER3.values()[(int) j]);
                                 }
@@ -160,13 +161,13 @@ public final class MorphSupportPlugin extends JavaPlugin implements Listener {
 
                                     if (l > 60)
                                     {
-                                        double j = Math.random() * EntityType.values().length;
+                                        double j = Math.random() * TIER4.values().length;
                                         Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                                 " " + TIER4.values()[(int) j]);
                                     }
                                     else
                                     {
-                                        double j = Math.random() * EntityType.values().length;
+                                        double j = Math.random() * TIER5.values().length;
                                         Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                                 " " + TIER5.values()[(int) j]);
                                     }
@@ -181,19 +182,19 @@ public final class MorphSupportPlugin extends JavaPlugin implements Listener {
 
                                 if (k < 15)
                                 {
-                                    double j = Math.random() * EntityType.values().length;
+                                    double j = Math.random() * TIER1.values().length;
                                     Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                             " " + TIER1.values()[(int) j]);
                                 }
                                 else if (k >= 15 && k < 30)
                                 {
-                                    double j = Math.random() * EntityType.values().length;
+                                    double j = Math.random() * TIER2.values().length;
                                     Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                             " " + TIER2.values()[(int) j]);
                                 }
                                 else if (k >= 30 && k < 50)
                                 {
-                                    double j = Math.random() * EntityType.values().length;
+                                    double j = Math.random() * TIER3.values().length;
                                     Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                             " " + TIER3.values()[(int) j]);
                                 }
@@ -203,13 +204,13 @@ public final class MorphSupportPlugin extends JavaPlugin implements Listener {
 
                                     if (l > 60)
                                     {
-                                        double j = Math.random() * EntityType.values().length;
+                                        double j = Math.random() * TIER4.values().length;
                                         Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                                 " " + TIER4.values()[(int) j]);
                                     }
                                     else
                                     {
-                                        double j = Math.random() * EntityType.values().length;
+                                        double j = Math.random() * TIER5.values().length;
                                         Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + player.getName() +
                                                 " " + TIER5.values()[(int) j]);
                                     }
@@ -237,6 +238,17 @@ public final class MorphSupportPlugin extends JavaPlugin implements Listener {
         if (bossBar != null)
         {
             bossBar.addPlayer(e.getPlayer());
+        }
+    }
+
+    @EventHandler
+    public void onPlayerDeath(PlayerDeathEvent e)
+    {
+        if (isStarted)
+        {
+            double j = Math.random() * TIER1.values().length;
+            Bukkit.getServer().dispatchCommand(getServer().getConsoleSender() , "morph morph " + e.getEntity().getName() +
+                    " " + TIER1.values()[(int) j]);
         }
     }
 }

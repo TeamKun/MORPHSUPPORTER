@@ -14,5 +14,6 @@ public enum TIER2 {
     SKELETON,
     SKELETONHORSE,
     SNOWMAN,
-    SPIDER
+    SPIDER,
+    SQUID
 }
